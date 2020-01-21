@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/hozana/next-app-shell#readme",
   "dependencies": {
-    "html-webpack-plugin": "^3.2.0"
+    "html-webpack-plugin": "^4.0.0-beta.5"
   },
   "peerDependencies": {
     "next": ">=9.0.0"
