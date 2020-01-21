@@ -6,6 +6,17 @@
   <i>Truly-offline Progressive Web Apps with NextJS</i>
 </p>
 
+<p align="center">
+  <a href="https://www.npmjs.com/package/next-app-shell">
+    <img src="https://img.shields.io/npm/dy/next-app-shell.svg">
+  </a>
+  <a href="https://www.npmjs.com/package/next-app-shell">
+    <img src="https://img.shields.io/npm/v/next-app-shell.svg?maxAge=3600&label=next-app-shell&colorB=007ec6">
+  </a>
+  <img src="https://img.shields.io/github/repo-size/hozana/next-app-shell.svg" />
+</p>
+
+<br/>
 
 ## What is this about ?
 
