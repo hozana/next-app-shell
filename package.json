@@ -27,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/hozana/next-app-shell/issues"
   },
-  "homepage": "https://github.com/hozana/next-app-shell#readme"
+  "homepage": "https://github.com/hozana/next-app-shell#readme",
+  "dependencies": {
+    "html-webpack-plugin": "^3.2.0"
+  }
 }
