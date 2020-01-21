@@ -132,3 +132,11 @@ Any other option that you want to pass to the [HtmlWebpackPlugin](https://github
 - We add a `<meta name="next-head-count" content="1" />` in the header of each app shell, otherwise Next breaks. We currently don't know what this number is about and how we can generate it automatically for each page.
 
 - The chunks loaded with `next/dynamic` are not added to the app shell files and the `dynamicIds` are not specified in the `__NEXT__DATA__` JSON. But it doesn't seem to break anything.
+
+
+## Publish to NPM (admin only)
+
+```
+npm install --global np
+np
+```
