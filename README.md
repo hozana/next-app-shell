@@ -91,25 +91,25 @@ workbox.precaching.precacheAndRoute([...self.__precacheManifest, ...appShells]);
 
 All the parameters are inside a `appShell` object (see example above)
 
-**nextPages** `string[]`
+- **nextPages** `string[]`
 
 Array of page keys. They should be the same as the files in Next's `/pages` directory.
 
 This parameter is mandatory.
 
-**template** `string`
+- **template** `string`
 
 Path to the .ejs template file used to generate the app shell files.
 
 If none is provided, the [default template](./default-template.ejs) will be used.
 
-**filenameGenerator** `pageKey => string`
+- **filenameGenerator** `pageKey => string`
 
 A function to generate the filename of the destination app shell file, given a page key.
 
 Defaults to `pageKey => app-shell/${pageKey}.html`
 
-**htmlWebpackPluginOptions** `object`
+- **htmlWebpackPluginOptions** `object`
 
 Any other option that you want to pass to the [HtmlWebpackPlugin](https://github.com/jantimon/html-webpack-plugin#options) which is used to generate the app shell file.
 
