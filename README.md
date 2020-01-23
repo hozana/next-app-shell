@@ -26,7 +26,7 @@ Furthermore, the cache space is potentially important since the whole HTML files
 
 With `next-app-shell`, one [app shell](https://developers.google.com/web/fundamentals/architecture/app-shell) is generated for each NextJS page. This way, wherever your user goes, it will always be possible to show him something.
 
-> **This plugin has only been tested with NextJS 9.2.0**. As we had to do reverse engineering to make this work, new versions of NextJS may break the code. Please see the known issues below.
+> **This plugin has only been tested with NextJS 9.2.0**. As we had to do some kind of "reverse engineering" to make this work, new versions of NextJS may break the code. Please see the known issues below.
 
 
 ## Installation
