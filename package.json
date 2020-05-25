@@ -1,6 +1,6 @@
 {
   "name": "next-app-shell",
-  "version": "0.9.4",
+  "version": "0.10.0",
   "description": "Truly-offline Progressive Web Apps with NextJS",
   "main": "index.js",
   "scripts": {
