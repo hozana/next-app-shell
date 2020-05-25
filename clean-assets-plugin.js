@@ -22,6 +22,16 @@ class CleanAssetsPlugin {
             }
           }));
 
+        // Also correct the URL of CSS files
+        data.assetTags.styles = data.assetTags.styles
+          .map(styleSheet => ({
+            ...styleSheet,
+            attributes: {
+              ...styleSheet.attributes,
+              href: styleSheet.attributes.href.replace('../static', '/_next/static')
+            }
+          }));
+
         cb(null, data);
       });
 
@@ -33,13 +43,16 @@ class CleanAssetsPlugin {
         const buildManifest = JSON.parse(compilation.assets['build-manifest.json']['_value']);
 
         // Gather chunk files from the build manifest, removing duplicates
-        const chunkFiles = [
+        let chunkFiles = [
           ...new Set([
             ...buildManifest.pages['/_polyfills'],
             ...buildManifest.pages[pageKey],
             ...buildManifest.pages['/_app']
           ])
         ];
+
+        // Keeps only JS files (we don't want CSS files to be processed here)
+        chunkFiles = chunkFiles.filter(fileName => fileName.endsWith('.js'));
 
         // Format chunks needed by the page
         const chunks = chunkFiles.map(src => ({
