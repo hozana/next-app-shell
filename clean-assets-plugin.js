@@ -47,7 +47,8 @@ class CleanAssetsPlugin {
           ...new Set([
             ...buildManifest.pages['/_polyfills'],
             ...buildManifest.pages[pageKey],
-            ...buildManifest.pages['/_app']
+            ...buildManifest.pages['/_app'],
+            ...buildManifest.lowPriorityFiles
           ])
         ];
 
@@ -66,7 +67,7 @@ class CleanAssetsPlugin {
               }
             : {
                 src: '/_next/' + src,
-                defer: ''
+                async: ''
               }
         }));
 

@@ -26,7 +26,7 @@ Furthermore, the cache space is potentially important since the whole HTML files
 
 With `next-app-shell`, one [app shell](https://developers.google.com/web/fundamentals/architecture/app-shell) is generated for each NextJS page. This way, wherever your user goes, it will always be possible to show him something.
 
-> **This plugin has only been tested with NextJS 9.2.0**. As we had to do some kind of "reverse engineering" to make this work, new versions of NextJS may break the code. Please see the known issues below.
+> **This plugin has only been tested with NextJS 9.4.2**. As we had to do some kind of "reverse engineering" to make this work, new versions of NextJS may break the code. Please see the known issues below.
 
 
 ## Installation
@@ -130,8 +130,6 @@ Any other option that you want to pass to the [HtmlWebpackPlugin](https://github
 - When the service worker is activated, the `getInitialProps` method is never called. This means you need to do as if it doesn't exist.
 
 - We add a `<meta name="next-head-count" content="1" />` in the header of each app shell, otherwise Next breaks. We currently don't know what this number is about and how we can generate it automatically for each page.
-
-- The chunks loaded with `next/dynamic` are not added to the app shell files and the `dynamicIds` are not specified in the `__NEXT__DATA__` JSON. But it doesn't seem to break anything.
 
 
 ## Publish to NPM (admin only)

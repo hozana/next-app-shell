@@ -41,8 +41,10 @@ module.exports = (nextConfig = {}) => ({
               page: '/' + pageKey,
               query: {},
               buildId: options.buildId,
-              dynamicBuildId: false,
-              dynamicIds: [],
+              isFallback: false,
+              customServer: true,
+              gip: true,
+              appGip: true,
               isAppShell: true
             }
           })
