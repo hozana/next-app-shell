@@ -45,10 +45,10 @@ class CleanAssetsPlugin {
         // Gather chunk files from the build manifest, removing duplicates
         let chunkFiles = [
           ...new Set([
-            ...buildManifest.pages['/_polyfills'],
-            ...buildManifest.pages[pageKey],
-            ...buildManifest.pages['/_app'],
-            ...buildManifest.lowPriorityFiles
+            ...buildManifest.pages['/_polyfills'] || [],
+            ...buildManifest.pages[pageKey] || [],
+            ...buildManifest.pages['/_app'] || [],
+            ...buildManifest.lowPriorityFiles || []
           ])
         ];
 
