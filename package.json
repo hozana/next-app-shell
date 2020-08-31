@@ -4,7 +4,7 @@
   "description": "Truly-offline Progressive Web Apps with NextJS",
   "main": "index.js",
   "scripts": {
-    "publish": "np",
+    "release": "np",
     "test": "echo \"No test specified\""
   },
   "repository": {
