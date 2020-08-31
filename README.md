@@ -135,6 +135,5 @@ Any other option that you want to pass to the [HtmlWebpackPlugin](https://github
 ## Publish to NPM (admin only)
 
 ```
-npm install --global np
-np
+npm run publish
 ```
