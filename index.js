@@ -45,7 +45,8 @@ module.exports = (nextConfig = {}) => ({
               customServer: true,
               gip: true,
               appGip: true,
-              isAppShell: true
+              isAppShell: true,
+              head: []
             }
           })
         );
