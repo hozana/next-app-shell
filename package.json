@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/hozana/next-app-shell#readme",
   "dependencies": {
-    "html-webpack-plugin": "^4.0.0-beta.5"
+    "html-webpack-plugin": "^5.5.0"
   },
   "devDependencies": {
     "np": "^6.5.0"
